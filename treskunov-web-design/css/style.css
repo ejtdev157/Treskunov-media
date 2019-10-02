@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height:1.5;
   /* Same as above  ---font: 15px/1.5 Arial, Helvetica, sans-serif;  */
 padding:0;
@@ -16,11 +16,83 @@ background-color:#d7d1c9;
   overflow: hidden;
 }
 
+ul {
+  /* default ul needs to be changed */
+padding: 0;
+margin:0;
+}
+
+
+
 /* Header */
 header{
   background-color: #525252;
   color: #ffffff;
   padding-top: .7em;
-  min-height: 2em;
-  border-bottom: #c10000;
+  min-height: 3em;
+  border-bottom: #c10000 2px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+float: left;
+display: inline;
+padding: 0 15px 0 15px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #c10000;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #d2fafb;
+}
+
+
+
+
+
+
+/* Showcase */
+#showcase {
+  min-height: 350px;
+  background: url('../img/webdev-showcase.png') no-repeat 0 -200px;
+  text-align: center;
+  color: #ffffff;
+}
+#showcase h1{
+  font-size: 38px;
+  padding-top: 2em;
+  margin-bottom: .2em;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+#news-letter{
+padding:15px;
+color: #ffffff;
+background: #c10000
+opacity: 0.5;
 }
